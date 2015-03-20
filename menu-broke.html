@@ -64,69 +64,38 @@
         </style>
     </head>
 <body>
-    <div class="fixed">
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">Denver City Council</a></h1>
-        </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
+    <!-- <div class="fixed"> // breaks site: links don't work after exiting menu until page refresh -->
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="tab-bar">
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon" ><span>Q&amp;As</span></a>
+            </section>
 
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="left">
-          <!-- <li class="active"><a href="#">Right Button Active</a></li> -->
-          <li class="has-dropdown">
-            <a href="#">Candidate Q&amp;As</a>
-            <ul class="dropdown">
-              <li class="has-dropdown"><a href="#">District At-Large</a>
-                <ul class="dropdown">
-                  <!--<li><label>Level Two</label></li>-->
-                    <li><a href="#kniech">Robin Kniech</a></li>
-                    <li><a href="#silva">Jose Silva</a></li>
-                    <li><a href="#washington">Jeffery Washington</a></li>
-                    <li><a href="#ortega">Deborah "Debbie" Ortega</a></li>
-                    <li><a href="#khalatbari">Kayvan Khalatbari</a></li>
-                </ul>
-              </li>
-               <li class="has-dropdown"><a href="#">District 1</a>
-                <ul class="dropdown">
-                  <!--<li><label>Level Two</label></li>-->
-                    <li><a href="#kniech">Robin Kniech</a></li>
-                    <li><a href="#silva">Jose Silva</a></li>
-                    <li><a href="#washington">Jeffery Washington</a></li>
-                    <li><a href="#ortega">Deborah "Debbie" Ortega</a></li>
-                    <li><a href="#khalatbari">Kayvan Khalatbari</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            <section class="middle tab-bar-section">
+                <h1 class="title">Denver Council Q&amp;A</h1>
+            </section>
 
-        <!-- Left Nav Section 
-        <ul class="left">
-          <li><a href="#">Left Nav Button</a></li>
-        </ul> -->
-      </section>
-    </nav>
-    </div>
+            <section class="right-small">
+                <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+            </section>
+            </nav>
 
-
-   <!--  <ul class="custom-side-nav">
-        <li class="active"><a href="#kniech">Robin Kniech</a></li>
-        <li><a href="#silva">Jose Silva</a></li>
-        <li><a href="#washington">Jeffery Washington</a></li>
-        <li><a href="#ortega">Deborah "Debbie" Ortega</a></li>
-        <li><a href="#khalatbari">Kayvan Khalatbari</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
-    </ul>
-
-       
-   <!--              </li>
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>City Council Districts</label></li>
+                <li class="has-submenu"><a href="#">At-Large</a>
+                    <ul class="left-submenu">
+                        <li class="back"><a href="#">Back</a></li>
+                        <li><label><a href="#at-large">At-Large</a></label></li>
+                        <li><a href="#kniech">Robin Kniech</a>
+                        <li><a href="#silva">Jose Silva</a>
+                        <li><a href="#washington">Jeffery Washington</a>
+                        <li><a href="#ortega">Deborah "Debbie" Ortega</a>
+                        <li><a href="#khalatbari">Kayvan Khalatbari</a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="has-submenu"><a href="#">District 1</a>
                     <ul class="left-submenu">
                         <li class="back"><a href="#">Back</a></li>
@@ -237,8 +206,41 @@
                         <li><a href="#gilmore">Stacie Gilmore</a>
                         <li><a href="#brown">Shelli Brown</a>
                         <li><a href="#bradley">Sean Bradley</a>
-                        <li><a href="#schook">Tea Schook</a> -->
-                        
+                        <li><a href="#schook">Tea Schook</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <aside class="right-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Users</label></li>
+                <li><a href="#">Hari Seldon</a></li>
+                <li class="has-submenu"><a href="#">R. Giskard Reventlov</a>
+                    <ul class="right-submenu">
+                        <li class="back"><a href="#">Back</a></li>
+                        <li><label>Level 1</label></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li class="has-submenu"><a href="#">Link 2 w/ submenu</a>
+                            <ul class="right-submenu">
+                                <li class="back"><a href="#">Back</a></li>
+                                <li><label>Level 2</label></li>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">...</a></li>
+            </ul>
+        </aside>
+
+        <a class="exit-off-canvas"></a>
+
+        </div>
+    </div>
+    <!-- </div> // closes fixed div that doesn't work -->
 
     <!-- Voter info starts here 
     <div class="row">
@@ -263,39 +265,39 @@
             <div id="at-large"></div>
             <h5 class="district">DENVER CITY COUNCIL DISTRICT AT-LARGE</h5>
                 <div id="washington"></div>
-                <div class="bio-box">
-                    <!-- <img class="headshot" src="images/khalatbari.jpg"> -->
-                        <ul>
-                            <li class="bio-name">Jeffery Washington</li>
-                            <li><img class="headshot" src="images/washington.jpg"></li>
-                            <li class="bio-header">AGE</li>
-                            <li class="bio-text">35</li>
-                            <li class="bio-header">FAMILY</li>
-                            <li class="bio-text">Single</li>
-                            <li class="bio-header">PROFESSION</li>
-                            <li class="bio-text">Communiy Outreach Manager for CAHEP Health Clinic</li>
-                            <li class="bio-header">EDUCATION</li>
-                            <li class="bio-text">B.S. Biology</li>
-                            <li class="bio-header">EXPERIENCE</li>
-                            <li class="bio-text">Represented 23,000 students in Student Government from 2010-2012 at Metropolitan State University of Denver and also ran against Beth McCann for HD-8 in 2014</li>
-                            <li class="bio-header">NEIGHBORHOOD</li>
-                            <li class="bio-text">Cherry Creek</li>
-                            <li class="bio-header">YEARS IN DENVER</li>
-                            <li class="bio-text">10 years</li>
-                            <li class="bio-header">HOMETOWN</li>
-                            <li class="bio-text">Oklahoma City, Okla.</li>
-                            <li class="bio-header">WEBSITE</li>
-                            <li class="bio-text"><a href="http://www.democracy.com/denver">democracy.com/denver</a></li>
-                            <li class="bio-header">FACEBOOK</li>
-                            <li class="bio-text"><a href="https://www.facebook.com/jefferywashington">jeffreywashington</a></li>
-                            <li class="bio-header">TWITTER</li>
-                            <li class="bio-text"></li>
-                        </ul>
-                    </div>
-                    <h3 class="name">Jeffery Washington</h3>
+                <h3 class="name">Jeffery Washington</h3>
                 <ul>
                     <li class="question">Why are you running for City Council?</li>
-                    <li class="answer">Because I believe we need people on City Council who are going to be fiscally responsible and treat taxpayer dollars as sacred and not their own private slush fund.</li>                
+                    <li class="answer">Because I believe we need people on City Council who are going to be fiscally responsible and treat taxpayer dollars as sacred and not their own private slush fund.</li>
+                    <div class="bio-box">
+                    <!-- <img class="headshot" src="images/khalatbari.jpg"> -->
+	                    <ul>
+	                        <li class="bio-name">Jeffery Washington</li>
+	                        <li><img class="headshot" src="images/washington.jpg"></li>
+	                        <li class="bio-header">AGE</li>
+	                        <li class="bio-text">35</li>
+	                        <li class="bio-header">FAMILY</li>
+	                        <li class="bio-text">Single</li>
+	                        <li class="bio-header">PROFESSION</li>
+	                        <li class="bio-text">Communiy Outreach Manager for CAHEP Health Clinic</li>
+	                        <li class="bio-header">EDUCATION</li>
+	                        <li class="bio-text">B.S. Biology</li>
+	                        <li class="bio-header">EXPERIENCE</li>
+	                        <li class="bio-text">Represented 23,000 students in Student Government from 2010-2012 at Metropolitan State University of Denver and also ran against Beth McCann for HD-8 in 2014</li>
+	                        <li class="bio-header">NEIGHBORHOOD</li>
+	                        <li class="bio-text">Cherry Creek</li>
+	                        <li class="bio-header">YEARS IN DENVER</li>
+	                        <li class="bio-text">10 years</li>
+	                        <li class="bio-header">HOMETOWN</li>
+	                        <li class="bio-text">Oklahoma City, Okla.</li>
+	                        <li class="bio-header">WEBSITE</li>
+	                        <li class="bio-text"><a href="http://www.democracy.com/denver">democracy.com/denver</a></li>
+	                        <li class="bio-header">FACEBOOK</li>
+	                        <li class="bio-text"><a href="https://www.facebook.com/jefferywashington">jeffreywashington</a></li>
+	                        <li class="bio-header">TWITTER</li>
+	                        <li class="bio-text"></li>
+	                    </ul>
+	                </div>
                 	<li class="question">What is the biggest challenge affecting your district, and what would you do as a council member to help resolve it?</li>
                     <li class="answer">Housing is becoming very unaffordable in Denver right now and I would get rid of unnecessary land use regulations that are prohibiting more affordable housing units from being built.</li>
                     <li class="question">Briefly describe two other issues in your district that you would work on as a council member.</li>
@@ -408,7 +410,7 @@
 	<!-- District 11 starts here -->
 	<div class="row">
         <div class="small-12 columns">
-            <div id="district-11"></div>
+            <div id="at-large"></div>
             <h5 class="district">DENVER CITY COUNCIL DISTRICT 11</h5>
                 <div id="bradley"></div>
                 <h3 class="name">Sean Bradley</h3>
