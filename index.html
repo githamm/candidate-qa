@@ -56,19 +56,24 @@
         li.bio-header { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 10px; color: rgba(153,0,18,0.8); margin-bottom: -3px; }
         li.bio-text { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 12px; margin-bottom: 3px; }
         li.bio-name { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 24px; color: rgba(153,0,18,0.8); margin-top: -10px; margin-bottom: 6px; }
+        li.info-text { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px; margin-bottom: 3px; }
+        li.info-header { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 18px; color: rgba(153,0,18,0.8); margin-top: 5px; }
+        li.info-date { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 14px; color: rgba(0,0,0,0.8); margin-bottom: -3px; }
         p.question { font-weight: bold; margin-bottom: 0px; }
         p.answer { margin-bottom: 25px; }
+        p.info-title { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 28px; color: rgba(0,0,0,0.8); margin-top: -10px !important; margin-bottom: 0px;text-align: center; }
         ul { list-style-type: none; padding: 0; margin: 0; }
         h5.district { font-size: 18px; color: gray; margin-top: 50px; }
         h3.name { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 28px; }
-        #top-bar-margin { margin-bottom: 50px; }
+        #top-bar-margin { margin-bottom: 30px; }
         p.intro-text { font-family: serif; font-size: 22px; }
+        h1.guide-title { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 42px; }
         </style>
     </head>
 <body>
     <!-- Adds padding to Top Bar Nav on hash jump within page -->
     <script>
-        var shiftWindow = function() { scrollBy(0, -60) };
+        var shiftWindow = function() { scrollBy(0, -50) };
         if (location.hash) shiftWindow();
             window.addEventListener("hashchange", shiftWindow);
     </script>
@@ -206,21 +211,57 @@
     </div>
     </div> <!-- Closes top-bar-margin -->
 
+    <div class="row">
+        <div class="medium-12 columns">
+        <h1 class="guide-title">Denver City Council Candidate Q&amp;As</h1>
+        </div>
+    </div>
+
     <!-- Voter info starts here -->
     <div class="row">
-        <div class="medium-8 columns">
-            <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus vel felis elementum iaculis. Vivamus convallis at dui quis scelerisque. Suspendisse at magna sit amet mauris hendrerit luctus. Duis arcu libero, congue tempor orci vel, varius mattis eros. Nam pulvinar luctus fermentum. Aenean blandit arcu at velit lacinia volutpat. Nullam semper a est id mollis. Vestibulum non quam nulla. Etiam dictum vulputate pellentesque. Praesent venenatis condimentum nisi sit amet tempus. Praesent faucibus ante quis bibendum eleifend. Nulla at massa enim. Vivamus a quam et ex ultricies laoreet vitae non libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus vel felis elementum iaculis. Vivamus convallis at dui quis scelerisque. Suspendisse at magna sit amet mauris hendrerit luctus.</p>
+        <div class="medium-4 columns">            
+            <p class="intro-text">On May 5, Denver voters will elect City Council members for 11 district seats and two at-large seats. New district boundaries take effect for this election (see map).</p>
+            <p class="intro-text">In an effort to provide Denver voters with information about City Council candidates, The Denver Post sent questionnaires to all candidates. Read their responses below. Use the drop-down menu at top to navigate between districts and candidates.</p>
         </div>
-        <div class="medium-4 columns panel">
-            <a href="#" data-reveal-id="mapModal"><img id="mapThumbnail" src="images/placeholder.png"></a>
+        <div class="medium-8 columns panel">
+            <p class="info-title">VOTER INFORMATION</p>
+            <ul>
+                <li class="info-header">DISTRICT MAP</li>
+                <li class="info-text">Interactive map shows new Denver City Council district boundaries; click arrow icon to show full-screen map</li>
+            </ul>
+            <!-- <a href="#" data-reveal-id="mapModal"><img id="mapThumbnail" src="images/district-map.jpg"></a>
+            <p>Click map 
             <div id="mapModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                <h2 id="modalTitle">Awesome. I have it.</h2>
-                <iframe width='100%' height='750' frameborder='0' src='http://denverpostdata.cartodb.com/viz/af899328-cdc0-11e4-96be-0e0c41326911/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-                <p class="lead">Your couch.  It is mine.</p>
-                <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                <h2 id="modalTitle">Denver City Council Districts</h2>
+                <p class="lead">Zoom map to find out your district; click arrow icon to go full screen</p> -->
+                <iframe width='100%' height='550' frameborder='0' src='http://denverpostdata.cartodb.com/viz/af899328-cdc0-11e4-96be-0e0c41326911/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                
+                <!-- <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div> -->
+            <hr>
+            <div id="voter-info">                
+                <div class="medium-6 columns">
+                    <ul>
+                    <li class="info-header">IMPORTANT DATES</li>
+                    <li class="info-date">April 13</li>
+                    <li class="info-text">22-day Colorado residency deadline &bull; Mail ballots go out &bull; 24-hour ballot drop-off boxes open</li>
+                    <li class="info-date">April 20</li>
+                    <li class="info-text">Voter service and polling centers open</li>
+                    <li class="info-date">May 5</li>
+                    <li class="info-text">Election Day, 7 a.m.-7 p.m.</li>
+                </ul>
+                </div>
+                <div class="medium-6 columns">
+                <ul>
+                    <li class="info-header">CONTACT</li>                    
+                    <li class="info-date">Website</li>
+                    <li class="info-text"><a href="http://www.denvervotes.org">denvervotes.org</a></li>                    
+                    <li class="info-date">E-mail</li>
+                    <li class="info-text"><a href="mailto:elections@denvergov.org">elections@denvergov.org</a></li>
+                    <li class="info-date">Phone</li>
+                    <li class="info-text">720-913-VOTE (8683)</li>
+                </ul>
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus vel felis elementum iaculis. Vivamus convallis at dui quis scelerisque. Suspendisse at magna sit amet mauris hendrerit luctus. Duis arcu libero, congue tempor orci vel, varius mattis eros. Nam pulvinar luctus fermentum. Aenean blandit arcu at velit lacinia volutpat. Nullam semper a est id mollis. Vestibulum non quam nulla. Etiam dictum vulputate pellentesque. Praesent venenatis condimentum nisi sit amet tempus. Praesent faucibus ante quis bibendum eleifend. Nulla at massa enim. Vivamus a quam et ex ultricies laoreet vitae non libero.</p>
         </div>
     </div>
 
@@ -240,7 +281,7 @@
                 <div class="bio-box">
                     <ul>
                         <li class="bio-name">Robin Kniech</li>
-                        <li><img class="headshot" src="images/kniech.jpg"></li>
+                        <li><img class="headshot" src="images/robin-kniech.jpg"></li>
                         <li class="bio-header">AGE</li>
                         <li class="bio-text">39</li>
                         <li class="bio-header">FAMILY</li>
@@ -314,7 +355,7 @@
                 <div class="bio-box">
                     <ul>
                         <li class="bio-name">Jeffery Washington</li>
-                        <li><img class="headshot" src="images/washington.jpg"></li>
+                        <li><img class="headshot" src="images/jeffery-washington.jpg"></li>
                         <li class="bio-header">AGE</li>
                         <li class="bio-text">35</li>
                         <li class="bio-header">FAMILY</li>
@@ -378,7 +419,7 @@
                 <div class="bio-box">
                     <ul>
                         <li class="bio-name">Kayvan Khalatbari</li>
-                        <li><img class="headshot" src="images/khalatbari.jpg"></li>
+                        <li><img class="headshot" src="images/kayvan-khalatbari.jpg"></li>
                         <li class="bio-header">AGE</li>
                         <li class="bio-text">31</li>
                         <li class="bio-header">FAMILY</li>
@@ -450,7 +491,7 @@
                 <div class="bio-box">
                     <ul>
                         <li class="bio-name">Rafael Espinoza</li>
-                        <li><img class="headshot" src="images/espinoza.jpg"></li>
+                        <li><img class="headshot" src="images/rafael-espinoza.jpg"></li>
                         <li class="bio-header">AGE</li>
                         <li class="bio-text">42</li>
                         <li class="bio-header">FAMILY</li>
@@ -520,7 +561,7 @@
                 <div class="bio-box">
                     <ul>
                         <li class="bio-name">Danny F. Lopez</li>
-                        <li><img class="headshot" src="images/lopez.jpg"></li>
+                        <li><img class="headshot" src="images/paul-lopez.jpg"></li>
                         <li class="bio-header">AGE</li>
                         <li class="bio-text">55</li>
                         <li class="bio-header">FAMILY</li>
@@ -621,7 +662,7 @@
                 <div class="bio-box">
                     <ul>
                         <li class="bio-name">Aaron Greco</li>
-                        <li><img class="headshot" src="images/greco.jpg"></li>
+                        <li><img class="headshot" src="images/aaron-greco.jpg"></li>
                         <li class="bio-header">AGE</li>
                         <li class="bio-text">38</li>
                         <li class="bio-header">FAMILY</li>
@@ -722,7 +763,7 @@
                 <div class="bio-box">
                     <ul>
                         <li class="bio-name">Sean Bradley</li>
-                        <li><img class="headshot" src="images/bradley.jpg"></li>
+                        <li><img class="headshot" src="images/sean-bradley.jpg"></li>
                         <li class="bio-header">AGE</li>
                         <li class="bio-text">38</li>
                         <li class="bio-header">FAMILY</li>
