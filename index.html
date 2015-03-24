@@ -39,7 +39,7 @@
         </script>
         <link rel="stylesheet" href="http://extras.denverpost.com/foundation/css/foundation.css" />
         <link rel="stylesheet" href="http://extras.denverpost.com/foundation/css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="http://extras.denverpost.com/weather-closures/weather-closures-styles.css" />
+        <link rel="stylesheet" type="text/css" href="candidate-qa.css" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
@@ -50,31 +50,6 @@
         <script>
             if (!window.jQuery) { document.write('<script src="http://extras.denverpost.com/projects/2015/salary-tables/demos/js/jquery-1.9.1.min.js"><\/script>'); }
         </script>
-        <style type="text/css">
-        .ho-list { display: inline; }
-        .social-icons { height: 50px; width: 50px; }
-        img.headshot { height: 225px; width: 175px; float: right; margin-left: 20px; }
-        .bio-box { border-top: 8px solid rgba(153,0,18,0.8); width: 300px; float: right; margin-left: 20px; padding: 10px 0px 30px 10px; }
-        li.bio-header { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 10px; color: rgba(153,0,18,0.8); margin-bottom: -3px; }
-        li.bio-text { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 12px; margin-bottom: 3px; }
-        li.bio-name { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 24px; color: rgba(153,0,18,0.8); margin-top: -10px; margin-bottom: 6px; }
-        li.info-text { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px; margin-bottom: 3px; }
-        li.info-header { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 18px; color: rgba(153,0,18,0.8); margin-top: 5px; }
-        li.info-date { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 14px; color: rgba(0,0,0,0.8); margin-bottom: -3px; }
-        p.question { font-weight: bold; margin-bottom: 0px; }
-        p.answer { margin-bottom: 25px; }
-        p.info-title { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 28px; color: rgba(0,0,0,0.8); margin-top: -10px !important; margin-bottom: 0px;text-align: center; }
-        ul { list-style-type: none; padding: 0; margin: 0; }
-        h5.district { font-size: 18px; color: gray; margin-top: 50px; }
-        h3.name { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 28px; }
-        #top-bar-margin { margin-bottom: 30px; }
-        p.intro-text { font-family: 'Merriweather', serif; font-size: 22px; }
-        h1.guide-title { font-family: 'Oswald', sans-serif; font-weight: 800; font-size: 48px; }
-        #nav-bar-title { font-family: serif; font-size: 24px; }
-        #nav-bar-dropdown { font-size: 14px; font-weight: bold; }
-        .share-buttons { height: 40px; width: 40px; }
-        li.share-list { display: inline; list-style-type: none; float: right; padding-right: 5px; }
-        </style>
     </head>
 <body>
     <!-- Adds padding to Top Bar Nav on hash jump within page -->
@@ -89,7 +64,7 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="http://denverpost.com" id="nav-bar-title">The Denver Post</a></h1>
+          <a href="http://denverpost.com"><img src="images/dp-logo-white.png" class="nav-logo"></a>
         </li>
          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -102,7 +77,7 @@
             <li class="has-dropdown">
                 <a href="#" id="nav-bar-dropdown">Read Candidate Q&amp;As</a>
                 <ul class="dropdown">
-                    <li class="has-dropdown"><a href="#at-large">District At-Large</a>
+                    <li class="has-dropdown"><a href="#at-large">At-Large</a>
                         <ul class="dropdown">
                             <li><label>At-Large</label></li>
                             <li><a href="#kniech">Robin Kniech</a></li>
@@ -217,21 +192,21 @@
     </div>
     </div> <!-- Closes top-bar-margin -->
 
-          <!-- SHARE -->
-      <div class="row">
+    <!-- Share buttons -->
+    <div class="row">
         <div class="medium-12 columns">
-        <ul>
-        <!-- Email -->
-        <li class="share-list share-buttons"><a href="mailto:?Subject=Meet your 2015 Colorado Rapids&Body=Meet%20the%202015%20Colorado%20Rapids: http://dpo.st/2015Rapids"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a></li>
-        <!-- Twitter -->
-        <li class="share-list share-buttons"><a href="http://twitter.com/share?url=http://dpo.st/2015Rapids&text=Meet your 2015 Colorado Rapids&hashtags=rapids96" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></li>
-        <!-- Facebook -->
-        <li class="share-list share-buttons"><a href="http://www.facebook.com/sharer.php?u=http://dpo.st/2015Rapids" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a></li>
-        
-        </ul>
-      </div></div>
+            <ul>
+                <!-- Email -->
+                <li class="share-list share-buttons"><a href="mailto:?Subject=Meet your 2015 Colorado Rapids&Body=Meet%20the%202015%20Colorado%20Rapids: http://dpo.st/2015Rapids"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a></li>
+                <!-- Twitter -->
+                <li class="share-list share-buttons"><a href="http://twitter.com/share?url=http://dpo.st/2015Rapids&text=Meet your 2015 Colorado Rapids&hashtags=rapids96" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></li>
+                <!-- Facebook -->
+                <li class="share-list share-buttons"><a href="http://www.facebook.com/sharer.php?u=http://dpo.st/2015Rapids" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a></li>            
+            </ul>
+        </div>
+    </div>
 
-<div class="row">
+    <div class="row">
         <div class="medium-12 columns">
         <h1 class="guide-title">Denver City Council Candidate Q&amp;As</h1>
         </div>
@@ -498,7 +473,7 @@
                 <p class="answer">I'm torn on this issue.  I don't believe government should be in control of an issue like this, but also understand the concerns associated with wanting to do it.  I need to speak with all stakeholders (business owners, city officials, residents and tourists) more to make an informed decision.</p>
                 <p class="question">When it comes to the city's budget, how would you change current spending priorities for city services?</p>
                 <p class="answer">I really love what Denver has done with their Arts & Venues Department, creating a self-funded entity that is reliant on itself to be efficient with the use of its money and make good decisions with it because the alternative is the inability to function.  More accountability for how money is spent and incorporating a traditional business practices to balancing cash flow would go a long way and reduce the necessity for perpetually rising taxes.  As someone who has more business experience than all folks currently in City Council and our Mayor combined, I have zero reason to believe I can't bring from more sustainable business practices to how we raise and spend our money.</p>
-        <hr>
+                <hr>
         </div>
     </div>
 
@@ -507,7 +482,7 @@
         <div class="small-12 columns">
             <div id="district-1"></div>
             <h5 class="district">DENVER CITY COUNCIL DISTRICT 1</h5>
-                               <div id="espinoza"></div>
+                <div id="espinoza"></div>
                 <div class="bio-box">
                     <ul>
                         <li class="bio-name">Rafael Espinoza</li>
@@ -569,6 +544,73 @@
                 <p class="answer">I wish cigarette smokers had the common decency to just throw the butts in the trash and not on the ground. If you can go out in any weather to get a hit of nicotine, you should be able to put the remnants in a trash can. Please, just pick up after yourselves.</p>
                 <p class="question">When it comes to the city's budget, how would you change current spending priorities for city services?</p>
                 <p class="answer">I would prioritize neighborhood infrastructure over grandiose projects. Nothing we have done is on par with the Eiffel Tower or even Bilbao, stop chasing that dream, our location and weather are awesome enough. Let’s get the little things right, sidewalks, schools, frequent bus circulators, parks, durability, affordability, sustainability, bikes, after school art and technology opportunities, mental health and homelessness. If we lead in these areas, we will be even more memorable as a city, and an even greater place to live.</p>
+                <hr>
+                               <div id="shepherd"></div>
+                <div class="bio-box">
+                    <ul>
+                        <li class="bio-name">Susan Shepherd</li>
+                        <li><img class="headshot" src="images/susan-shepherd.jpg"></li>
+                        <li class="bio-header">AGE</li>
+                        <li class="bio-text">47</li>
+                        <li class="bio-header">FAMILY</li>
+                        <li class="bio-text">Husband Doug, son Austin - 7 years old</li>
+                        <li class="bio-header">PROFESSION</li>
+                        <li class="bio-text">City Councilman</li>
+                        <li class="bio-header">EDUCATION</li>
+                        <li class="bio-text">B.A., Telecommunications & Film, University of Oregon</li>
+                        <li class="bio-header">EXPERIENCE</li>
+                        <li class="bio-text">Denver City Councilmember, 2011 - present</li>
+                        <li class="bio-header">NEIGHBORHOOD</li>
+                        <li class="bio-text">Witter-Cofield Historic District</li>
+                        <li class="bio-header">YEARS IN DENVER</li>
+                        <li class="bio-text">16 years</li>
+                        <li class="bio-header">HOMETOWN</li>
+                        <li class="bio-text">New Orleans, La.</li>
+                        <li class="bio-header">WEBSITE</li>
+                        <li class="bio-text"><a href="http://www.shepherdfornorthwestdenver.com">shepherdfornorthwestdenver.com</a></li>
+                        <li class="bio-header">FACEBOOK</li>
+                        <li class="bio-text"><a href="https://www.facebook.com/councilwomansusanshepherd">facebook.com/councilwomansusanshepherd</a></li>
+                        <li class="bio-header">TWITTER</li>
+                        <li class="bio-text"></li>
+                    </ul>
+                </div>
+                <h3 class="name">Susan Shepherd</h3>
+                <p class="question">Why are you running for City Council?</p>
+                <p class="answer">To make northwest Denver the best place to live, work, play and raise a family.</p>
+                <p class="question">What is the biggest challenge affecting your district, and what would you do as a council member to help resolve it?</p>
+                <p class="answer">Housing prices and rents have skyrocketed significantly in the last 2 years and many low to middle income families cannot afford to buy or rent here.  I support a dedicated revenue stream for affordable housing, which would include the construction of entry-level homes and condominiums for income-qualified residents as well as affordable rentals.</p>
+                <p class="question">Briefly describe two other issues in your district that you would work on as a council member.</p>
+                <p class="answer">Significantly increase street and intersection safety for all users of the road, especially cyclists and pedestrians.  Would prioritize high-foot traffic areas near schools, business districts and transit stops.<p>
+                <p class="question">Continue to strengthen local business districts so we have access to more goods and services near our homes, reducing our reliance on the automobile and boosting our local economy and keeping our tax dollars in Denver, supporting our schools.</p>
+                <p class="question">As its population grows, Denver must deal with increased traffic congestion and scarcer parking. How would you approach challenges associated with new development?</p>
+                <p class="answer">We need to continue to increase all of our transit options in Denver to make them more accessible and convenient in order to reduce personal reliance on the automobile.  I am a champion for increased bicycle and pedestrian infrastructure, and support car-share and and the re-structuring of fares to make transit more affordable and convenient.  We need more dedicated city staff to work on area parking management plans to help parking turn over more frequently for visiting customers in our business districts, and to alleviate the pressure that nearby residents feel near their homes when the available parking inventory isn't being well managed.</p>
+                <p class="question">Denver's policies to address homelessness have focused on two approaches: expanding support services, on the one hand, and passing restrictions or bans on panhandling and camping in public spaces. How should Denver address the issue in the future?</p>
+                <p class="answer">I do not believe that there should be any more bans or restrictions passed because there are not adequate services in Denver especially downtown to help homeless individuals with their basic daily needs such as using the bathroom, taking a shower, storing their belongings or finding a place to rest their head safely at night.</p>
+                <p class="question">Do you support the city's use, and possible expansion, of red-light cameras and photo speeding enforcement?</p>
+                <p class="answer">Yes I do.  Speeding can often lead to crashes which can cause death and disability to pedestrians, cyclists, other motorists, and animals, as well as significant property damage to homes and businesses.  I live a block off Federal Blvd and see this happen all the time.  We need all the tools we can get to help calm traffic and make our streets safer for all users.</p>
+                <p class="question">If elected, would you accept or return raises that will increase council members' salaries to $87,623 in July and to $91,915 a year later, a total 10.3 percent increase?</p>
+                <p class="answer">No, but I would increase my personal giving to local non-profit organizations with operations or close ties to the district.</p>
+                <p class="question">Do you think the police reforms that Chief Robert White has implemented have worked, or is there more to be done?</p>
+                <p class="answer">There are many more reforms that need to occur.  First, there needs to be a strong body camera policy in place that covers all sworn officers regardless of rank and includes officers working off-duty.  There needs to be a strong discipline matrix in conjunction with that to enforce compliance.  I believe there should be expedited internal affairs investigations, stronger screening of new recruits to better identify anti-social and violent traits, and a much stronger system to discipline and terminate officers who find themselves repeatedly at the center of excessive force investigations.</p>
+                <p class="question">Denver's new downtown jail has faced enormous challenges, including cases of inmate abuse. What role should the council play in fixing problems in jail management?</p>
+                <p class="answer">I believe we need more personnel to cover the workload, better employee screening and training, and I would also support body cameras for sheriff's deputies as well.</p>
+                <p class="question">Do you support the city's plan to pay for the bulk of the National Western Center plan by extending lodging and car rental taxes? If not, what other options should the city pursue?</p>
+                <p class="answer">It seems like a good plan to raise the required revenue at this point, but I am still doing research.</p>
+                <p class="question">What do you see as Mayor Michael Hancock's greatest strength and greatest weakness?</p>
+                <p class="answer">I think he has done a great job creating new opportunities and for youth through expanded after-school programming and creative solutions as the My Denver Card.  This can especially lift up disadvantaged youth.</p>
+                <p class="question">On another hard, the Mayor seems to be somewhat risk-adverse.</p>
+                <p class="question">Should Denver's civil service employees be granted collective bargaining rights, or do you support the city's current employment system?</p>
+                <p class="answer">Police, Fire Fighters, and Sheriffs all enjoy collective bargaining rights in Denver.  What's good for the goose is good for the gander.  If the rest of city employees would like to band together to bargain for wages, benefits and working conditions, I absolutely think they should receive equal treatment.</p>
+                <p class="question">Are Denver's regulations on sales of recreational marijuana working? If not, what actions by the city would you support?</p>
+                <p class="answer">For the most part I think we did a fairly decent job as the first city in the world to fully legalize recreational marijuana.  However, I think that neighborhoods should have a stronger say in determining whether a retail marijuana establishment should be allowed in their neighborhood or not.  Currently they have very little say regarding the establishment of new liquor licenses because that issue is controlled by the state.  I don't think we should make the same mistake regarding marijuana at the local level, and that is something we can decide in Denver.</p>
+                <p class="question">Should Denver allow public consumption of marijuana, either fully or with restrictions?</p>
+                <p class="answer">No I wouldn't support that.</p>
+                <p class="question">Should Denver ban tobacco smoking outdoors along the 16th Street Mall or in city parks?</p>
+                <p class="answer">I would be open to considering banning tobacco smoking on the 16th Street Mall.  It might be "straw that broke the camel's back" in getting my husband to quit!  He works near the mall.</p>
+                <p class="question">When it comes to the city's budget, how would you change current spending priorities for city services?</p>
+                <p class="answer">Significantly increased budget for transportation planning and management, and for the full build-out of Denver Moves, the city's bicycle connectivity plan.</p>
+                <p class="answer">More dedicated funding for affordable housing!!!</p>
+                <hr>
         </div>
 	</div>
 
@@ -851,7 +893,7 @@
     	</div>
 	</div>
 
-    <!-- Social media buttons -->
+    <!-- Old social media buttons 
     <ul class="post-meta-social-links text-center no-bullet" id="sticky-inner">
               <li class="post-meta-social pm-twitter ho-list">
                 <a href="javascript:void(0)" onclick="javascript:window.open('http://twitter.com/share?text=The%20Denver%20Post%20Summer%20Camp%20Listings&amp;url=http%3A%2F%2Fextras.denverpost.com%2Fprojects%2F2015%2Fsummer-camps-2015%2Fmobile.html&amp;via=denverpost', 'twitwin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=1');"><img class="social-icons" src="http://extras.denverpost.com/projects/2014/latino-project/images/social-twitter.png" alt="Tweet this story">
@@ -866,8 +908,14 @@
                 </a>
               </li>
               <div class="clear"></div>
-              </ul>
+              </ul> -->
         
+        <div class="row">
+            <hr>
+            <div class="medium-4 medium-centered columns">
+                <a href="http://denverpost.com"><img src="images/dp-logo.png" class="footer"></a>
+            </div>
+        </div>
    	
   
     <script>
