@@ -30,7 +30,7 @@
         <meta property="og:title" content="Denver City Council Candidate Q&amp;As - The Denver Post" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://extras.denverpost.com/candidate-qa/denver-2015/" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="http://extras.denverpost.com/candidate-qa/denver-2015/images/district-map.png" />
         <meta property="og:site_name" content="The Denver Post" />
         <meta property="og:description" content="Denver City Council candidate Q&amp;As" />
         <meta property="article:publisher" content="https://www.facebook.com/denverpost" />
@@ -47,16 +47,18 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
         <script src="http://extras.denverpost.com/foundation/js/vendor/jquery.js"></script>
     	<script src="http://extras.denverpost.com/foundation/js/foundation.min.js"></script>
+        <script src="fastclick.js"></script>
         <script>
             if (!window.jQuery) { document.write('<script src="http://extras.denverpost.com/projects/2015/salary-tables/demos/js/jquery-1.9.1.min.js"><\/script>'); }
         </script>
     </head>
 <body>
-    
-
+    <script>
+    FastClick.attach(document.body);
+    </script>
     <div id="top-bar-margin">
     <div class="fixed">
-    <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false">
+    <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
           <a href="http://denverpost.com"><img src="images/dp-logo-white.png" class="nav-logo"></a>
@@ -67,14 +69,14 @@
 
       <section class="top-bar-section">
         <!-- Right Nav Section -->
-        <ul class="left">
+        <ul class="right">
             <!-- <li class="active"><a href="#">Right Button Active</a></li> -->
             <li class="has-dropdown">
                 <a href="#" id="nav-bar-dropdown">Read Candidate Q&amp;As</a>
                 <ul class="dropdown">
-                    <li class="has-dropdown"><a>At-Large</a>
+                    <li class="has-dropdown"><a href="#at-large">At-Large</a>
                         <ul class="dropdown">
-                            <li><a href="#at-large">At-Large Home</a></li>
+                            <li><label>At-Large Home</label></li>
                             <li><a href="#kniech">Robin Kniech</a></li>
                             <li><a href="#silva">Jose Silva</a></li>
                             <li><a href="#washington">Jeffery Washington</a></li>
@@ -197,7 +199,7 @@
                 <li class="share-list share-buttons"><a href="http://twitter.com/share?url=http://dpo.st/council-qa&text=Denver City Council Candidate Q&amp;As&hashtags=copolitics" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></li> -->
                 <!-- Facebook 
                 <li class="share-list share-buttons"><a href="http://www.facebook.com/sharer.php?u=http://dpo.st/council-qa" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a></li> -->
-            </ul> -->
+            </ul>
         </div>
     </div>
 
