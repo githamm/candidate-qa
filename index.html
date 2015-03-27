@@ -72,7 +72,7 @@
         <ul class="right">
             <!-- <li class="active"><a href="#">Right Button Active</a></li> -->
             <li class="has-dropdown">
-                <a href="#" id="nav-bar-dropdown">Read Candidate Q&amp;As</a>
+                <a href="#" id="nav-bar-dropdown">Go to Candidate Q&amp;A</a>
                 <ul class="dropdown">
                     <li class="has-dropdown"><a href="#at-large">At-Large</a>
                         <ul class="dropdown">
@@ -228,55 +228,64 @@
         </div>
     </div>
 
-    <!-- Voter info starts here -->
+     <div data-alert class="alert-box">
+            <a href="#" class="close">&times;</a>
+                <strong>HOW TO NAVIGATE </strong>Use the "Go to Candidate Q&amp;A" drop-down menu on the top bar to jump to district or candidate Q&amp;As, or click a district on the map for a link to Q&amp;As                
+            </div>       
+
+            <!-- Voter info starts here -->
     <div class="row">
-        <div class="medium-4 columns">            
+        <div class="medium-4 columns">
+           
             <p class="intro-text">On May 5, Denver voters will elect City Council members for 11 district seats and two at-large seats. New district boundaries take effect for this election (see map).</p>
-            <p class="intro-text">In an effort to provide Denver voters with information about City Council candidates, The Denver Post sent questionnaires to all candidates. Read their responses below. Use the drop-down menu at top to navigate between districts and candidates.</p>
-            <p class="intro-text">For more politics news, go to <a href="http://www.denverpost.com/politics">The Denver Post's politics page</a> and politics blog, <a href="http://blogs.denverpost.com/thespot/">The Spot</a>.</p>
-        </div>
-        <div class="medium-8 columns panel">
+            <p class="intro-text">In an effort to provide Denver voters with information about City Council candidates, The Denver Post asked them to complete an extensive questionnaire. Read their responses below.</p>
+            <div class="panel">
+                <p class="info-title">MORE INFO</p>
+                <ul>
+                <li class="info-header">On The Denver Post</li>
+                <li class="info-text"><a href="http://denverpost.com/council">DenverPost.com/council</a></li>
+                <li class="info-text"><a href="http://blogs.denverpost.com/thespot/">The Spot politics blog</a></li>
+                <li class="info-header">On Twitter</li>
+                <li class="info-text">Denver Post politics news <a href="https://twitter.com/denverpolitics">@denverpolitics</a></li>
+                <li class="info-text">Politics Editor Chuck Plunkett <a href="https://twitter.com/chuckplunkett">@chuckplunkett</a></li>
+                <li class="info-text">Reporters Jon Murray <a href="https://twitter.com/JonMurray">@jonmurray</a> and Lynn Bartels <a href="https://twitter.com/lynn_bartels">@lynn_bartels</a></li>
+                <li class="info-header">On Facebook</li>
+                <li class="info-text"><a href="https://www.facebook.com/denverpolitics">Denver Post Politics</a></li>
+                </ul>
+            </div>            
+        </div> <!-- close medium-4 -->
+        <div class="medium-8 columns">
+        <hr>
             <p class="info-title">VOTER INFORMATION</p>
             <ul>
                 <li class="info-header">DISTRICT MAP</li>
                 <li class="info-text">Interactive map shows new Denver City Council district boundaries; <a href="http://denverpostdata.cartodb.com/viz/af899328-cdc0-11e4-96be-0e0c41326911/embed_map#">click here</a> to show full-screen map</li>
             </ul>
-            <!-- <a href="#" data-reveal-id="mapModal"><img id="mapThumbnail" src="images/district-map.jpg"></a>
-            <p class="answer">Click map 
-            <div id="mapModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                <h2 id="modalTitle">Denver City Council Districts</h2>
-                <p class="lead">Zoom map to find out your district; click arrow icon to go full screen</p> -->
                 <iframe width='100%' height='550' frameborder='0' src='http://denverpostdata.cartodb.com/viz/af899328-cdc0-11e4-96be-0e0c41326911/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-                
-                <!-- <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div> -->
-            <hr>
-            <div id="voter-info">                
                 <div class="medium-6 columns">
                     <ul>
-                    <li class="info-header">IMPORTANT DATES</li>
-                    <li class="info-date">April 13</li>
-                    <li class="info-text">22-day Colorado residency deadline &bull; Mail ballots go out &bull; 24-hour ballot drop-off boxes open</li>
-                    <li class="info-date">April 20</li>
-                    <li class="info-text">Voter service and polling centers open</li>
-                    <li class="info-date">May 5</li>
-                    <li class="info-text">Election Day, 7 a.m.-7 p.m.</li>
-                </ul>
+                        <li class="info-header">IMPORTANT DATES</li>
+                        <li class="info-date">April 13</li>
+                        <li class="info-text">22-day Colorado residency deadline &bull; Mail ballots go out &bull; 24-hour ballot drop-off boxes open</li>
+                        <li class="info-date">April 20</li>
+                        <li class="info-text">Voter service and polling centers open</li>
+                        <li class="info-date">May 5</li>
+                        <li class="info-text">Election Day, 7 a.m.-7 p.m.</li>
+                    </ul>
                 </div>
                 <div class="medium-6 columns">
-                <ul>
-                    <li class="info-header">CONTACT</li>                    
-                    <li class="info-date">Website</li>
-                    <li class="info-text"><a href="http://www.denvervotes.org">denvervotes.org</a></li>                    
-                    <li class="info-date">E-mail</li>
-                    <li class="info-text"><a href="mailto:elections@denvergov.org">elections@denvergov.org</a></li>
-                    <li class="info-date">Phone</li>
-                    <li class="info-text">720-913-VOTE (8683)</li>
-                </ul>
+                    <ul>
+                        <li class="info-header">CONTACT</li>                    
+                        <li class="info-date">Website</li>
+                        <li class="info-text"><a href="http://www.denvervotes.org">denvervotes.org</a></li>                    
+                        <li class="info-date">E-mail</li>
+                        <li class="info-text"><a href="mailto:elections@denvergov.org">elections@denvergov.org</a></li>
+                        <li class="info-date">Phone</li>
+                        <li class="info-text">720-913-VOTE (8683)</li>     
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <hr>
-    </div>
+            </div> <!-- close medium-8 -->
+    </div> <!-- close row -->
 
     <!-- <div class="row">
         <div class="small-12 columns">
@@ -288,6 +297,7 @@
 
     <div class="row">
         <div class="small-12 columns">
+        <hr>
             <div id="at-large"></div>
             <h5 class="district">DENVER CITY COUNCIL AT-LARGE</h5>
                 <div id="kniech"></div>
@@ -652,7 +662,28 @@
     <div class="row">
         <div class="small-12 columns">
             <div id="district-1"></div>
-            <h5 class="district">DENVER CITY COUNCIL DISTRICT 1</h5>
+                <h5 class="district">DENVER CITY COUNCIL DISTRICT 1<br>
+                <a href="#" data-reveal-id="modal-1">DISTRICT RACE STORY &bull; DETAILED MAP</h5></a>
+                    <div id="modal-1" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">  
+                        <h3 class="name">Denver City Council District 1, a hotbed of development, weighs approaches</h3>
+                        <img class="district-map" src="images/district-1-map.jpg">
+                        <p class="modal-text"><strong>By Jon Murray</strong><br>
+                        <em>The Denver Post</em></p>
+                        <p>Although Kim Wood and her family landed in northwest Denver by chance, they've grown to love living in one of the city's most dynamic areas.</p>
+                        The recent transplants from rural Pennsylvania aren't alone. From their newly thriving and family-friendly Sunnyside neighborhood to Jefferson Park, Sloan's Lake and the Highland neighborhoods that also make up Denver City Council District 1, the area is vibrant. It's walkable. It has energetic corners and urban districts teeming with restaurants, coffee shops, yoga studios and breweries.</p>
+
+                        But the Woods, who have rented a friend's investment house since August, also have adapted to paying "the highest rent we've ever had, in the smallest house we've ever had," said Kim Wood, 36.</p>
+
+                        And buying a place of their own? Prices in the area — and in much of Denver — seem ever out of reach.</p>
+
+                        Housing costs are the common drawback in northwest Denver, although Wood, who was enjoying the patio Monday outside Huckleberry Roasters with her friend Megan Kabakjian, takes it in stride.</p>
+
+                        She and her husband, Jake, found good public schools for their four children. Their house is an easy drive to the church they started, called Storyline Church, in Five Points.</p>
+
+                        But the pace of change in northwest Denver has been unsettling to others.</p>
+                        <p><em>Read the rest of this story at <a href="http://www.denverpost.com/council/ci_27779601/council-district-1-denver-hotbed-development-weighs-approaches">DenverPost.com</a></em></p>
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
                 <div id="espinoza"></div>
                 <div class="bio-box">
                     <ul>
@@ -789,7 +820,27 @@
     <div class="row">
         <div class="small-12 columns">
             <div id="district-2"></div>
-            <h5 class="district">DENVER CITY COUNCIL DISTRICT 2</h5>
+            <h5 class="district">DENVER CITY COUNCIL DISTRICT 2<br>
+                <a href="#" data-reveal-id="modal-2">DISTRICT RACE STORY &bull; DETAILED MAP</h5></a>
+                    <div id="modal-2" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">  
+                        <h3 class="name">Denver City Council District 2: Suburban slice looks to stay the course</h3>
+                        <img class="district-map" src="images/district-2-map.jpg">
+                        <p class="modal-text"><strong>By Kieran Nicholson</strong><br>
+                        <em>The Denver Post</em></p>
+                        <p>Denver's City Council District 2, in the southwest corner of the city, is known for its relatively affordable housing and a suburban feel.
+
+                        <p>It also has been a rarity in left-leaning Denver, electing a series of conservative council members.</p>
+
+                        <p>Voters on May 5 will decide whether to follow that course in choosing one of five candidates to succeed three-term Councilwoman Jeanne Faatz, who is term-limited.</p>
+
+                        <p>"Historically, the district has been somewhat of an outlier in Denver politics," Eric Sondermann, an independent political analyst, said of the predominately working-class district. "It has been far more conservative than other parts of the city, almost quasi-suburban."</p>
+
+                        <p>Ben Blanchard, president of the Bear Valley Improvement Association, a 50-year-old-plus community group that encompasses about 1,500 homes, said the district mostly just needs the city's help with nuts-and-bolts issues.</p>
+
+                        <p>"The city hasn't focused on upgrading things like sidewalks," Blanchard said. "They're sinking and cracking here."</p>
+                        <p><em>Read the rest of this story at <a href="http://www.denverpost.com/council/ci_27787366/denver-council-district-2-suburban-slice-looks-stay-course">DenverPost.com</a></em></p>
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
                                <div id="coleman"></div>
                 <div class="bio-box">
                     <ul>
@@ -1139,7 +1190,7 @@
                         <li class="bio-header">AGE</li>
                         <li class="bio-text">36</li>
                         <li class="bio-header">FAMILY</li>
-                        <li class="bio-text">I’m a lucky father to a precious daughter, a lucky fiancée to an amazing woman, and human-pet to an extraordinarily clever yorkie.</li>
+                        <li class="bio-text">I’m a lucky father to a precious daughter, a lucky fiancé to an amazing woman, and human-pet to an extraordinarily clever yorkie.</li>
                         <li class="bio-header">PROFESSION</li>
                         <li class="bio-text">Denver City Councilman</li>
                         <li class="bio-header">EDUCATION</li>
@@ -2856,6 +2907,9 @@
                         <li class="bio-text"><a href="https://www.facebook.com/WayneNewforCityCouncil">WayneNewforCityCouncil</a></li>
                         <li class="bio-header">TWITTER</li>
                         <li class="bio-text"><a href="https://twitter.com/waynenewdenver">@waynenewdenver</a></li>
+                        <hr>
+                        <li class="bio-header">STORIES ABOUT WAYNE NEW</li>
+                        <li class="bio-text"><a href="http://blogs.denverpost.com/thespot/2015/03/26/central-denver-council-candidate-admits-campaign-finance-slip-ups/118431/">Central Denver council candidate admits campaign finance slip-ups</a> &bull; March 26</li>
                     </ul>
                 </div>
                 <h3 class="name">Wayne New</h3>

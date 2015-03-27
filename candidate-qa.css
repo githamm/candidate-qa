@@ -1,25 +1,145 @@
-.ho-list { display: inline; }
-.social-icons { height: 45px; width: 45px; border-radius: 50px; float: right; margin-right: 5px; }
-img.headshot { height: 225px; width: 175px; float: right; margin-left: 20px; }
-.bio-box { border-top: 8px solid rgba(153,0,18,0.8); width: 300px; float: right; margin-left: 20px; padding: 10px 0px 30px 10px; }
-li.bio-header { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 12px; color: rgba(153,0,18,0.8); margin-bottom: -3px; }
-li.bio-text { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 14px; margin-bottom: 3px; }
-li.bio-name { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 24px; color: rgba(153,0,18,0.8); margin-top: -10px; margin-bottom: 6px; }
-li.info-text { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px; margin-bottom: 3px; }
-li.info-header { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 18px; color: rgba(153,0,18,0.8); margin-top: 5px; }
-li.info-date { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 14px; color: rgba(0,0,0,0.8); margin-bottom: -3px; }
-p.question { font-family: 'Georgia', serif; font-size: 18px; font-weight: bold; margin-bottom: 0px; }
-p.answer { font-family: 'Georgia', serif; font-size: 18px; margin-bottom: 25px; }
-p.info-title { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 28px; color: rgba(0,0,0,0.8); margin-top: -10px !important; margin-bottom: 0px;text-align: center; }
-ul { list-style-type: none; padding: 0; margin: 0; }
-h5.district { font-size: 18px; color: gray; margin-top: 50px; }
-h3.name { font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 28px; }
-#top-bar-margin { margin-bottom: 30px; }
-p.intro-text { font-family: 'Georgia', serif; font-size: 22px; }
-h1.guide-title { font-family: 'Oswald', sans-serif; font-weight: 800; font-size: 48px; }
-#nav-bar-title { font-family: 'Georgia', serif; font-size: 24px; }
-#nav-bar-dropdown { font-size: 14px; font-weight: bold; }
-.share-buttons { height: 40px; width: 40px; }
-li.share-list { display: inline; list-style-type: none; float: right; padding-right: 5px; }
-.footer { padding-bottom: 25px; }
-img.nav-logo { height: 35px; padding: 10px 25px 0px 10px; }
+.ho-list { 
+	display: inline; 
+}
+.social-icons { 
+	height: 45px; 
+	width: 45px; 
+	border-radius: 50px; 
+	float: right; 
+	margin-right: 5px;
+}
+img.headshot { 
+	height: 225px; 
+	width: 175px; 
+	float: right; 
+	margin-left: 20px; 
+}
+.bio-box { 
+	border-top: 8px 
+	solid rgba(153,0,18,0.8); 
+	width: 300px; 
+	float: right; 
+	margin-left: 20px; 
+	padding: 10px 0px 30px 10px; 
+}
+li.bio-header { 
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 800; 
+	font-size: 12px; 
+	color: rgba(153,0,18,0.8); 
+	margin-bottom: -3px; 
+}
+li.bio-text { 
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 400; 
+	font-size: 14px; 
+	margin-bottom: 3px; 
+}
+li.bio-name { 
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 800; 
+	font-size: 24px; 
+	color: rgba(153,0,18,0.8); 
+	margin-top: -10px; 
+	margin-bottom: 6px; 
+}
+li.info-text { 
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 400; 
+	font-size: 16px; 
+	margin-bottom: 3px; 
+}
+li.info-header { 
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 800; 
+	font-size: 18px; 
+	color: rgba(153,0,18,0.8); 
+	margin-top: 5px; 
+}
+li.info-date { 
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 800; 
+	font-size: 14px; 
+	color: rgba(0,0,0,0.8); 
+	margin-bottom: -3px; 
+}
+p.question { 
+	font-family: 'Georgia', serif; 
+	font-size: 18px; 
+	font-weight: bold; 
+	margin-bottom: 0px; 
+}
+p.answer { 
+	font-family: 'Georgia', serif; 
+	font-size: 18px; 
+	margin-bottom: 25px; 
+}
+p.info-title { 
+	font-family: 'Open Sans', 
+	sans-serif; 
+	font-weight: 800; 
+	font-size: 28px; 
+	color: rgba(0,0,0,0.8); 
+	margin-top: -10px !important; 
+	margin-bottom: 0px;
+	text-align: center; 
+}
+ul { 
+	list-style-type: none; 
+	padding: 0; 
+	margin: 0; 
+}
+h5.district { 
+	font-size: 18px; 
+	color: gray; 
+	margin-top: 50px; 
+}
+h3.name { 
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 800; 
+	font-size: 28px; 
+}
+#top-bar-margin { 
+	margin-bottom: 30px; 
+}
+p.intro-text { 
+	font-family: 'Georgia', serif; 
+	font-size: 20px; 
+}
+h1.guide-title { 
+	font-family: 'Oswald', sans-serif; 
+	font-weight: 800; 
+	font-size: 48px; 
+}
+#nav-bar-title { 
+	font-family: 'Georgia', serif; 
+	font-size: 24px; 
+}
+#nav-bar-dropdown { 
+	font-size: 14px; 
+	font-weight: bold; 
+}
+.share-buttons { 
+	height: 40px; 
+	width: 40px; 
+}
+li.share-list { 
+	display: inline; 
+	list-style-type: none; 
+	float: right; 
+	padding-right: 5px; 
+}
+.footer { 
+	padding-bottom: 25px; 
+}
+img.nav-logo { 
+	height: 35px; 
+	padding: 10px 25px 0px 10px; 
+}
+img.district-map { 
+	width: 500px; 
+	margin-left: 25px; 
+	margin-bottom: 25px; 
+	float: right; 
+	border: 1px solid rgba(0,0,0,.2) ; 
+}
