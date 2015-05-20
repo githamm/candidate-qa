@@ -92,7 +92,7 @@ ul {
 h5.district { 
 	font-size: 18px; 
 	color: gray; 
-	margin-top: 50px; 
+	margin-top: 20px; 
 }
 h3.name { 
 	font-family: 'Open Sans', sans-serif; 
@@ -142,6 +142,9 @@ img.district-map {
 	margin-bottom: 25px; 
 	float: right; 
 	border: 1px solid rgba(0,0,0,.2) ; 
+}
+.label {
+	margin-bottom: 25px;
 }
 
 /* Runoff styles */
